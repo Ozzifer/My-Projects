@@ -1,0 +1,31 @@
+// This program takes two values from the user and then swaps them
+// before printing the values. The user will be prompted to enter
+// both numbers.
+// Cayce Osborn
+#include <iostream>
+using namespace std;
+int main()
+{
+float firstNumber;
+float secondNumber;
+float x;
+
+cout << "Enter the first number" << endl;
+cout << "Then hit enter" << endl;
+cin >> firstNumber;
+ 
+cout << "Enter the second number" << endl;
+cout << "Then hit enter" << endl;
+cin >> secondNumber;
+x = secondNumber;
+cout << endl << "You input the numbers as " << firstNumber
+<< " and " << secondNumber << endl;
+
+secondNumber = firstNumber;
+firstNumber = x;
+
+cout << "After swapping, the values of the two numbers are "
+<< firstNumber << " and " << secondNumber << endl;
+cout<< "Modified by Cayce Osborn"<<endl;
+return 0;
+}
