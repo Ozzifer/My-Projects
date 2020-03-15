@@ -1,0 +1,38 @@
+#Cayce Osborn
+#Organization and Assembly
+#Project 1
+#Due: 4/11/18
+
+.data
+			# creating all the strings to be printed in main
+str: .asciiz "Hello World!\n"
+str1: .asciiz "My name is Cayce Osborn.\n"
+str2: .asciiz "My favorite video game is Super Mario World.\n"
+str3: .asciiz "My favorite movie is Dogma.\n"
+str4: .asciiz "My favorite song is Kill 'em All.\n"
+str5: .asciiz "The band who plays it is Metallica.\n"
+
+.text
+.globl main
+
+main:
+	li $v0, 4	# the system call code for print string
+	la $a0, str	# the address of the string to print
+	syscall		# print the string
+
+	la $a0, str1	# the address of the string to print
+	syscall		# print the string
+
+	la $a0, str2	# the address of the string to print
+	syscall		# print the string
+
+
+	la $a0, str3	# the address of the string to print
+	syscall		# print the string
+
+	la $a0, str4	# the address of the string to print
+	syscall		# print the string
+
+	la $a0, str5	# the address of the string to print
+	syscall		# print the string
+
