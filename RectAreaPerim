@@ -1,0 +1,20 @@
+//Created by Cayce Osborn
+//csci140 8-11:10AM
+//8/31/16
+
+#include <iostream>
+using namespace std;
+
+int main(){
+	int length=8;
+	int width=3;
+
+	int area=width*length;
+	int perimeter=width*2+length*2;
+
+
+	cout<<"The area of the rectangle is "<<area<<endl;
+	cout<<"The perimeter of the rectangle is "<<perimeter<<endl;
+	cout<<"Created by Cayce Osborn"<<endl;
+	return 0;
+}
